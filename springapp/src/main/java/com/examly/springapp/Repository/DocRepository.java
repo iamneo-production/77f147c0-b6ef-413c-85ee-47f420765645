@@ -7,7 +7,7 @@ import com.examly.springapp.Model.DocumentModel;
 
 @Repository
 public interface DocRepository extends JpaRepository<DocumentModel, String>{
-    Optional<DocumentModel> findPhotoById(long id);
+        Optional<DocumentModel> findPhotoById(long id);
 	DocumentModel findDocById(long id);
 }
 
