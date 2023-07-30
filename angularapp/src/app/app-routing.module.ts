@@ -1,22 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CorrectiondocumentsComponent } from './correctiondocuments/correctiondocuments.component';
-import { AadharComponent } from './aadhar/aadhar.component';
-import { AdminhomeComponent } from './adminhome/adminhome.component';
-import { AdminnavComponent } from './adminnav/adminnav.component';
+import { CustomerapplyformComponent } from './customerapplyform/customerapplyform.component';
+import { CustomerapplydocumentComponent } from './customerapplydocument/customerapplydocument.component';
+import { CustomerapplyresponseComponent } from './customerapplyresponse/customerapplyresponse.component';
 
 const routes: Routes = [
-  {path: '', component:AdminhomeComponent },
-  {path: 'adminhome', component: AdminhomeComponent},
-  {path: 'adminnav', component: AdminnavComponent},
-  {path: 'corrdoc', component: CorrectiondocumentsComponent},
-  {path: 'aadhar/:id', component: AadharComponent},
-]
+  {path: '', component: CustomerapplyformComponent},
+  {path: 'applyform', component: CustomerapplyformComponent},
+  {path: 'applydoc', component:  CustomerapplydocumentComponent},
+  {path: 'applyres', component: CustomerapplyresponseComponent},
+  
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-
-
 export class AppRoutingModule { }
