@@ -1,6 +1,7 @@
 
 package com.examly.springapp.Response;
 public class DocResponseMessage {
+	
     private String message;
 
 	public DocResponseMessage(String message) {

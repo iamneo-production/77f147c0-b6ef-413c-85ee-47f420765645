@@ -11,8 +11,6 @@ import com.examly.springapp.Model.DocumentModel;
 import com.examly.springapp.Model.ApplicationModel;
 import com.examly.springapp.Response.DocResponseMessage;
 
-
-
 @Service
 public class UserService {
 	
@@ -23,14 +21,12 @@ public class UserService {
 	@Autowired
     public DocRepository docRepo;
 	
-	
 	public ApplicationModel addProfile(ApplicationModel profile)
 	{
 		profile.setApprovalStatus("isPending");
 		return  appRepo.save(profile);
                         
 	}
-	
 	
 	public ApplicationModel getProfileById(long id) {
         return appRepo.findById(id);
@@ -59,7 +55,6 @@ public class UserService {
 
 		return profile3;
 	}
-	
 	
 	public DocumentModel uploadImage(MultipartFile file, String message, long id) throws IOException {
 		ApplicationModel prof = appRepo.findById(id);

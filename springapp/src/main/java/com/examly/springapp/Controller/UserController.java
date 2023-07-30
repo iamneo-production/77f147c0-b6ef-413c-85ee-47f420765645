@@ -23,8 +23,6 @@ public class UserController {
     @PostMapping("/customer/addProfile")
     public ApplicationModel addProfile(@Value(value= "") @RequestBody ApplicationModel profile)
     {
-
-    	
 		return users.addProfile(profile);
     }
     
