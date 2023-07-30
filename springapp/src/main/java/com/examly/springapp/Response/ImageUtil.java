@@ -1,8 +1,10 @@
 
 package com.examly.springapp.Response;
+
 import java.io.ByteArrayOutputStream;
 import java.util.zip.Deflater;
 import java.util.zip.Inflater;
+
 public class ImageUtil {
     public static byte[] compressImage(byte[] data) {
         Deflater deflater = new Deflater();

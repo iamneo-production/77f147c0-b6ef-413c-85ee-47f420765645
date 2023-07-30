@@ -9,7 +9,6 @@ import { CustomerapplydocumentComponent } from './customerapplydocument/customer
 import { CustomerapplyresponseComponent } from './customerapplyresponse/customerapplyresponse.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

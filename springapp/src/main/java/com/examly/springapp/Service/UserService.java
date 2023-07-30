@@ -15,7 +15,6 @@ import com.examly.springapp.Response.DocResponseMessage;
 @Service
 public class UserService {
 	
-
 	@Autowired
     public ApplicationRepository appRepo;
 

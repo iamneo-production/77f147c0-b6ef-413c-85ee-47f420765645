@@ -14,6 +14,7 @@ import com.examly.springapp.Service.UserService;
 
 @RestController
 @CrossOrigin
+
 public class UserController {
     @Autowired(required = true)
     private UserService users;
