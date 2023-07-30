@@ -4,11 +4,9 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="applications")
-public class ApplicationModel {
-    
-    
+public class ApplicationModel {  
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	@Column(name="firstname")
 	private String firstname;
@@ -35,11 +33,11 @@ public class ApplicationModel {
 	@Column(name="approvalStatus")
 	private String approvalStatus;
 	@Column(name="is_updated")
-    private boolean isUpdated;
+        private boolean isUpdated;
 	
 	@OneToOne(cascade = CascadeType.ALL,orphanRemoval = true)
-    @JoinColumn(name = "document_id", referencedColumnName = "docid")
-    private DocumentModel document;
+        @JoinColumn(name = "document_id", referencedColumnName = "docid")
+        private DocumentModel document;
 		
 	public ApplicationModel () {
 		
