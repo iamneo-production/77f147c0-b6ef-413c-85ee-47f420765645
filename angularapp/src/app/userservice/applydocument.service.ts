@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApplydocumentService {
+  
   private baseUrl = 'https://8080-adbfbfdfacbdcaababfebeecbbaefdfd.project.examly.io/customer/addDocuments';
   constructor(private http: HttpClient) { }
   uploadDocument(productImage: File, id: string): Observable<HttpEvent<any>> {
