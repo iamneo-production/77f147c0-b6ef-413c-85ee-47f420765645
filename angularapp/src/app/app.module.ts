@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { CustomerapplyformComponent } from './customerapplyform/customerapplyform.component';
 import { CustomerapplydocumentComponent } from './customerapplydocument/customerapplydocument.component';
 import { CustomerapplyresponseComponent } from './customerapplyresponse/customerapplyresponse.component';
-import { NavbarComponent } from './navbar/navbar.component';
+
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     CustomerapplyformComponent,
     CustomerapplydocumentComponent,
     CustomerapplyresponseComponent,
-    NavbarComponent,
+    
   ],
   imports: [
     BrowserModule,
