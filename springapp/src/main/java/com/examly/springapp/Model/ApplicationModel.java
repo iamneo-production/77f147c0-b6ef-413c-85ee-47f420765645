@@ -1,5 +1,5 @@
 
-package com.examly.springapp.Model.ApplicationModel;
+package com.examly.springapp.Model;
 import jakarta.persistence.*;
 
 @Entity

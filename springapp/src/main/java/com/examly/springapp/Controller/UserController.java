@@ -1,18 +1,24 @@
 
 import org.springframework.beans.factory.annotation.*;
-import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
-import com.examly.springapp.Response.DocResponse;
+import com.examly.springapp.Response.DocResponseMessage;
 import com.examly.springapp.Model.DocumentModel;
 import com.examly.springapp.Model.ApplicationModel;
 import com.examly.springapp.Repository.ApplicationRepository;
+import com.examly.springapp.Response.ImageUtil;
+import com.examly.springapp.Repository.DocRepository;
+import com.examly.springapp.Service.UserService;
+
+@RestController
+@CrossOrigin
 public class UserController {
     @Autowired(required = true)
     private UserService users;
     @Autowired
     public DocRepository docRepo;
     @Autowired
-    public ProfileRepository profileRepo;
+    public ApplicationRepository profileRepo;
     
     @PostMapping("/customer/addProfile")
     public ApplicationModel addProfile(@Value(value= "") @RequestBody ApplicationModel profile)
