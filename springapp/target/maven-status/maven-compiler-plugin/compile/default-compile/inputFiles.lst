@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_u6wStQ
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/AuthService.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/AuthController.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/repository/AuthRepository.java
@@ -5,3 +6,6 @@
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/model/UserModel.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/SpringappApplication.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/response/LoginResponse.java
+=======
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/SpringappApplication.java
+>>>>>>> .merge_file_iPjRQW
