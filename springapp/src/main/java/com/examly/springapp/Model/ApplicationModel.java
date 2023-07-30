@@ -1,6 +1,6 @@
 
 package com.examly.springapp.Model;
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name="applications")

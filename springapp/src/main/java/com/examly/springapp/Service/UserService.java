@@ -2,6 +2,7 @@
 package com.examly.springapp.Service;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.Service;
+import org.springframework.http.*;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import com.examly.springapp.Repository.ApplicationRepository;
