@@ -15,6 +15,7 @@ import { CustomerapplyresponseComponent } from './customerapplyresponse/customer
     CustomerapplyformComponent,
     CustomerapplydocumentComponent,
     CustomerapplyresponseComponent,
+    
   ],
   imports: [
     BrowserModule,
