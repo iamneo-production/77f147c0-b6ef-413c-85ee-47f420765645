@@ -9,6 +9,7 @@ then
 		cd /home/coder/project/workspace/springapp/;
 		mvn clean test;
     else
+<<<<<<< HEAD
         echo "testGetProfileAll FAILED";
         echo "testGetProfileById FAILED";
         echo "testCreateProfile FAILED";
@@ -21,4 +22,16 @@ else
         echo "testCreateProfile FAILED";
         echo "test_case1 FAILED";
         echo "test_case2 FAILED";
+=======
+        echo "BE_Add_User FAILED";
+        echo "BE_Add_Profile FAILED";
+        echo "BE_Get_Profile FAILED";
+        echo "BE_Update_Profile FAILED";
+    fi
+else
+	echo "BE_Add_User FAILED";
+    echo "BE_Add_Profile FAILED";
+    echo "BE_Get_Profile FAILED";
+    echo "BE_Update_Profile FAILED";
+>>>>>>> Online_Aadhaar_Portal-rithanya2903
 fi
