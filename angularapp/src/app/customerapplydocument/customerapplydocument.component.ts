@@ -12,6 +12,7 @@ import { HttpResponse } from '@angular/common/http';
   styleUrls: ['./customerapplydocument.component.css']
 })
 export class CustomerapplydocumentComponent implements OnInit {
+  
   Applieddocuments:Applyform=new Applyform();
   id: string = '';
   message = '';
