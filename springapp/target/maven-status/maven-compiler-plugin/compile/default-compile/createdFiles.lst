@@ -1,0 +1,5 @@
+com/examly/springapp/model/Profile.class
+com/examly/springapp/repository/ProfileRepository.class
+com/examly/springapp/SpringappApplication.class
+com/examly/springapp/controller/ProfileController.class
+com/examly/springapp/service/ProfileService.class

@@ -1,5 +1,5 @@
 
-package com.examly.springapp.model;
+package com.examly.springapp.Model;
 
 import javax.persistence.*;
 

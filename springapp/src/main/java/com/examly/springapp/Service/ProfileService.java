@@ -1,10 +1,10 @@
 
-package com.examly.springapp.service;
+package com.examly.springapp.Service;
 import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.examly.springapp.model.Profile;
-import com.examly.springapp.repository.ProfileRepository;
+import com.examly.springapp.Model.Profile;
+import com.examly.springapp.Repository.ProfileRepository;
 
 
 @Service

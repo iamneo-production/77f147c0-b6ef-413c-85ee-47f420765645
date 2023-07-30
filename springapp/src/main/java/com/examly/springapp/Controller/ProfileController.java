@@ -1,13 +1,13 @@
 
-package com.examly.springapp.controller;
+package com.examly.springapp.Controller;
 
 import java.util.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
-import com.examly.springapp.model.Profile;
-import com.examly.springapp.service.ProfileService;
-import com.examly.springapp.repository.ProfileRepository;
+import com.examly.springapp.Model.Profile;
+import com.examly.springapp.Service.ProfileService;
+import com.examly.springapp.Repository.ProfileRepository;
 
 @RestController
 @CrossOrigin(origins="https://8081-adbfbfdfacbdcaababfebeedcefbdfdacea.project.examly.io/",allowedHeaders="*")
