@@ -7,8 +7,8 @@ import { CustomerapplyresponseComponent } from './customerapplyresponse/customer
 const routes: Routes = [
   {path: '', component: CustomerapplyformComponent},
   {path: 'applyform', component: CustomerapplyformComponent},
-  {path: 'applydoc', component:  CustomerapplydocumentComponent},
-  {path: 'applyres', component: CustomerapplyresponseComponent},
+  {path: 'applydoc/:email', component:  CustomerapplydocumentComponent},
+  {path: 'applyres/:email', component: CustomerapplyresponseComponent},
   
 ];
 
