@@ -1,6 +1,6 @@
 export class Applyform {
-    id:number
-    email: string;
+  id:number
+  email: string;
 	firstname : string;
 	lastname : string;
 	fathername : string;

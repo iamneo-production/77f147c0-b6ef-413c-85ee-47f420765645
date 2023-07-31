@@ -10,6 +10,7 @@ import { ApplyformService } from '../userservice/applyform.service';
   styleUrls: ['./customerapplyresponse.component.css']
 })
 export class CustomerapplyresponseComponent implements OnInit {
+  
   Applieddocuments:Applyform = new Applyform()
   email:string
   constructor(private route: ActivatedRoute ,private http: HttpClient,private router: Router,private applyService: ApplyformService) { }
@@ -23,7 +24,7 @@ export class CustomerapplyresponseComponent implements OnInit {
       }, error => console.log(error));
 }
 home(){
-  //this.router.navigateByUrl('/home');
+  this.router.navigateByUrl('/home');
 }
 
 }

@@ -10,6 +10,7 @@ import { ApplyformService } from '../userservice/applyform.service';
   styleUrls: ['./customerapplyform.component.css']
 })
 export class CustomerapplyformComponent implements OnInit {
+  
   newcard:Applyform = new Applyform()
   id:number
   houseno : string=""

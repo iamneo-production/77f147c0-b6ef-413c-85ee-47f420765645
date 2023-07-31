@@ -9,6 +9,7 @@ export class ApplyformService {
 
   private baseurl='https://8080-adbfbfdfacbdcaababfebeecbbaefdfd.project.examly.io/customer/addProfile'
   private baseurl1='https://8080-adbfbfdfacbdcaababfebeecbbaefdfd.project.examly.io/customer/getProfileByEmail'
+  
   constructor(private httpclient:HttpClient) { }
 
   applyNewcard(formData): Observable<Object>{
