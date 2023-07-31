@@ -2,7 +2,8 @@
 package com.examly.springapp.Response;
 
 public class DocResponseMessage {
-	private String message;
+	
+    private String message;
 
 	public DocResponseMessage(String message) {
 		super();
@@ -16,6 +17,4 @@ public class DocResponseMessage {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	
-	
 }

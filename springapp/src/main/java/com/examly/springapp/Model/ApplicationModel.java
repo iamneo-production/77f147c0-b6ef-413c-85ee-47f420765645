@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Table(name="applications")
 public class ApplicationModel {  
 	@Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	@Column(name="firstname")
 	private String firstname;
@@ -191,9 +191,5 @@ public class ApplicationModel {
 	            return null; 
 	        }
 	}
-
-	
-
-	
 	
 }

@@ -1,6 +1,4 @@
-
 package com.examly.springapp.Service;
-
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.Service;
 import org.springframework.http.*;
@@ -13,15 +11,14 @@ import com.examly.springapp.Model.DocumentModel;
 import com.examly.springapp.Model.ApplicationModel;
 import com.examly.springapp.Response.DocResponseMessage;
 
-
 @Service
 public class UserService {
 	
 	@Autowired
-    public ApplicationRepository appRepo;
+        public ApplicationRepository appRepo;
 
 	@Autowired
-    public DocRepository docRepo;
+        public DocRepository docRepo;
 	
 	public ApplicationModel addProfile(ApplicationModel profile)
 	{

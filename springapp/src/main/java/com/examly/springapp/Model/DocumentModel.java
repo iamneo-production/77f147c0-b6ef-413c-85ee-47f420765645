@@ -1,10 +1,8 @@
-
 package com.examly.springapp.Model;
 
 import javax.persistence.*;
 
 import org.hibernate.annotations.GenericGenerator;
-import org.springframework.beans.factory.annotation.*;
 
 @Entity
 @Table(name = "photos")
@@ -28,22 +26,21 @@ public class DocumentModel {
 		
 	  }
 
-	public DocumentModel(String docid, String name, String type,byte[] data) {
+	  public DocumentModel(String docid, String name, String type,byte[] data) {
 		super();
 		this.docid=docid;
 		this.name = name;
 		this.type = type;
-		this.data = data;
-		
-	}
+		this.data = data;	
+	  }
 
-	public String getName() {
+	  public String getName() {
 		return name;
-	}
-
-	public void setName(String name) {
+	  }
+ 
+	  public void setName(String name) {
 		this.name = name;
-	}
+	  }
 
 	public String getType() {
 		return type;
@@ -71,4 +68,3 @@ public class DocumentModel {
 	
 
 }
-
