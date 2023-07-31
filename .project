@@ -22,12 +22,36 @@
 	</natures>
 	<filteredResources>
 		<filter>
+<<<<<<< HEAD
 			<id>1690776776079</id>
+=======
+<<<<<<< HEAD
+			<id>1690735859197</id>
+=======
+<<<<<<< HEAD
+			<id>1690688227170</id>
+=======
+			<id>1690718516681</id>
+>>>>>>> Online_Aadhaar_Portal-rithanya2903
+>>>>>>> bf8ff0109478d568d9dffcd5abb908aea0bc8986
+>>>>>>> 9bc7647cf2c1a6a7a3b63348bd5b83429ccae2dc
 			<name></name>
 			<type>30</type>
 			<matcher>
 				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+<<<<<<< HEAD
 				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+=======
+<<<<<<< HEAD
+				<arguments>node_modules|.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+=======
+<<<<<<< HEAD
+				<arguments>node_modules|.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+=======
+				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+>>>>>>> Online_Aadhaar_Portal-rithanya2903
+>>>>>>> bf8ff0109478d568d9dffcd5abb908aea0bc8986
+>>>>>>> 9bc7647cf2c1a6a7a3b63348bd5b83429ccae2dc
 			</matcher>
 		</filter>
 	</filteredResources>

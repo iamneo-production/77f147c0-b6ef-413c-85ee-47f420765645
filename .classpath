@@ -31,6 +31,13 @@
 			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9bc7647cf2c1a6a7a3b63348bd5b83429ccae2dc
 	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -44,6 +51,11 @@
 			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
+=======
+>>>>>>> Online_Aadhaar_Portal-rithanya2903
+>>>>>>> bf8ff0109478d568d9dffcd5abb908aea0bc8986
+>>>>>>> 9bc7647cf2c1a6a7a3b63348bd5b83429ccae2dc
 	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
 		<attributes>
 			<attribute name="optional" value="true"/>
