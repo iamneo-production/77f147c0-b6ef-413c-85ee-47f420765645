@@ -4,12 +4,14 @@ import { Applieddoc } from '../adminservice/applieddoc';
 import { CorrectiondocsService } from '../adminservice/correctiondocs.service';
 import { ApplieddocService } from '../adminservice/applieddoc.service';
 
+
 @Component({
   selector: 'app-generate-aadhar',
   templateUrl: './generate-aadhar.component.html',
   styleUrls: ['./generate-aadhar.component.css']
 })
-export class GenerateAadharComponent implements OnInit{
+export class GenerateAadharComponent implements OnInit {
+
   id:number;
   Applieddocuments:Applieddoc=new Applieddoc();
   
@@ -18,7 +20,7 @@ export class GenerateAadharComponent implements OnInit{
   setApprovalStatus : string;
   
   constructor(private route: ActivatedRoute,private router: Router,
-    private verifyService: ApplieddocService, private docService: ApplieddocService) { }
+    private verifyService: ApplieddocService, private docService: CorrectiondocsService) { }
     ngOnInit() {
      
       this.id = this.route.snapshot.params['id']|| null;
@@ -52,6 +54,5 @@ export class GenerateAadharComponent implements OnInit{
           reader.readAsDataURL(image);
         }
       }
-      
-}
 
+}
