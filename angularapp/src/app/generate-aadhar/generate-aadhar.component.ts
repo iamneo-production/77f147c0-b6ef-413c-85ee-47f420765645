@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Newcard } from '../userservices/newcard';
-import { NewcardService } from '../userservices/newcard.service';
-import { NewcarddocService } from '../userservices/newcarddoc.service';
+import { Applieddoc } from '../adminservice/applieddoc';
+import { CorrectiondocsService } from '../adminservice/correctiondocs.service';
+import { ApplieddocService } from '../adminservice/applieddoc.service';
 
 @Component({
   selector: 'app-generate-aadhar',
@@ -11,14 +11,14 @@ import { NewcarddocService } from '../userservices/newcarddoc.service';
 })
 export class GenerateAadharComponent implements OnInit{
   id:number;
-  Applieddocuments:Newcard=new Newcard();
+  Applieddocuments:Applieddoc=new Applieddoc();
   
   imageSrc: any;
   docid:string;
   setApprovalStatus : string;
   
   constructor(private route: ActivatedRoute,private router: Router,
-    private verifyService: NewcardService, private docService: NewcarddocService) { }
+    private verifyService: ApplieddocService, private docService: ApplieddocService) { }
     ngOnInit() {
      
       this.id = this.route.snapshot.params['id']|| null;
