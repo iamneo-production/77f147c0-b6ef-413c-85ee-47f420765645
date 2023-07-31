@@ -11,6 +11,10 @@ import com.examly.springapp.service.AuthService;
 import com.examly.springapp.repository.AuthRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import com.examly.springapp.Model.LoginModel;
+
+import com.examly.springapp.Response.LoginResponse;
+
 
 @RestController
 @CrossOrigin()
@@ -24,6 +28,19 @@ public class AuthController {
 
 		@Autowired
 		 private AuthRepository authRepo;
+	
+		 @PostMapping("/user/login")
+		    public ResponseEntity<?> isUserPresent(@RequestBody LoginModel data)
+		    {
+		        LoginResponse loginResponse = AuthService.isUserPresent(data);
+		        return ResponseEntity.ok(loginResponse);
+		    }
+		 @PostMapping("/admin/login")
+		    public ResponseEntity<?> isAdminPresent(@RequestBody LoginModel data)
+		    {
+		        LoginResponse loginResponse = AuthService.isAdminPresent(data);
+		        return ResponseEntity.ok(loginResponse);
+		    }
 
 		@PostMapping("/user/signup")
 		 public UserModel saveUser(@RequestBody UserModel user){
