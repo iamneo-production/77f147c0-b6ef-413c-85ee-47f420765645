@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { ApplieddocumentsComponent } from './applieddocuments/applieddocuments.component';
-import { VerificationComponent } from './verification/verification.component';
+
+
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-    {path: '', component: ApplieddocumentsComponent},
-    {path: 'appdoc', component:  ApplieddocumentsComponent},
-    {path: 'verify/:id', component: VerificationComponent},
+  {path: '', component: LoginComponent},
+  {path: 'login', component: LoginComponent},
 ];
 
 @NgModule({
