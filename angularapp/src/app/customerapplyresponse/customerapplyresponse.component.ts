@@ -24,7 +24,7 @@ export class CustomerapplyresponseComponent implements OnInit {
       }, error => console.log(error));
 }
 home(){
-  //this.router.navigateByUrl('/home');
+  this.router.navigateByUrl('/home');
 }
 
 }
