@@ -9,13 +9,14 @@ import { CustomerapplydocumentComponent } from './customerapplydocument/customer
 import { CustomerapplyresponseComponent } from './customerapplyresponse/customerapplyresponse.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     CustomerapplyformComponent,
     CustomerapplydocumentComponent,
     CustomerapplyresponseComponent,
-    
+
   ],
   imports: [
     BrowserModule,
