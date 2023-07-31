@@ -13,4 +13,7 @@ public interface ApplicationRepository extends JpaRepository<ApplicationModel, L
 	ApplicationModel findByEmail(String email);
 	ApplicationModel findById(long id);
 	
+	List<ApplicationModel> findByIsUpdatedTrue();
+	List<ApplicationModel> findByIsUpdatedFalse();
+	Optional<ApplicationModel> findPhotoById(long id);
 }

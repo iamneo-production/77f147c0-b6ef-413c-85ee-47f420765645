@@ -15,13 +15,13 @@ import com.examly.springapp.Model.ApplicationModel;
 import com.examly.springapp.Repository.ApplicationRepository;
 import com.examly.springapp.Response.ImageUtil;
 import com.examly.springapp.Repository.DocRepository;
-import com.examly.springapp.Service.UserService;
+import com.examly.springapp.Service.AdminService;
 
 
 
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200",allowedHeaders="*")
+@CrossOrigin
 
 public class AdminController {
 	
@@ -31,7 +31,7 @@ public class AdminController {
     @Autowired
     public DocRepository docRepo;
     @Autowired
-    public ProfileRepository profileRepo;
+    public ApplicationRepository profileRepo;
     
     
     @GetMapping("/getAllProfile")
