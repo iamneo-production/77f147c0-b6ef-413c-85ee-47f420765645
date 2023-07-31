@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+<<<<<<< HEAD
+=======
+import { BrowserModule } from '@angular/platform-browser';
+>>>>>>> f6c32e5fe4e87dad0c7f76042a97fc081493ed6d
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -19,9 +23,12 @@ import { AadharComponent } from './aadhar/aadhar.component';
 import { TrackpageComponent } from './trackpage/trackpage.component';
 import { TrackstatusComponent } from './trackstatus/trackstatus.component';
 import { GenerateAadharComponent } from './generate-aadhar/generate-aadhar.component';
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminnavComponent } from './adminnav/adminnav.component';
+=======
+>>>>>>> f6c32e5fe4e87dad0c7f76042a97fc081493ed6d
 
 @NgModule({
   declarations: [
@@ -41,6 +48,7 @@ import { AdminnavComponent } from './adminnav/adminnav.component';
     AadharComponent,
     TrackstatusComponent,
     TrackpageComponent,
+<<<<<<< HEAD
     GenerateAadharComponent,
     NavbarComponent,
     AdminnavComponent
@@ -50,6 +58,15 @@ import { AdminnavComponent } from './adminnav/adminnav.component';
     FormsModule,
     HttpClientModule,
     AppRoutingModule
+=======
+    GenerateAadharComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
+>>>>>>> f6c32e5fe4e87dad0c7f76042a97fc081493ed6d
   ],
   providers: [],
   bootstrap: [AppComponent]

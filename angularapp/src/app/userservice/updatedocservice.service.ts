@@ -7,7 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class UpdatedocserviceService {
 
+<<<<<<< HEAD
   private baseUrl = 'https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/customer/addDocuments';
+=======
+  private baseUrl = 'https://8080-adbfbfdfacbdcaababfebeecbbaefdfd.project.examly.io/customer/addDocuments';
+>>>>>>> f6c32e5fe4e87dad0c7f76042a97fc081493ed6d
   constructor(private http: HttpClient) { }
   uploadDocument(productImage: File, id: string): Observable<HttpEvent<any>> {
     const formData: FormData = new FormData();
@@ -21,4 +25,8 @@ export class UpdatedocserviceService {
 
     return this.http.request(req);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6c32e5fe4e87dad0c7f76042a97fc081493ed6d

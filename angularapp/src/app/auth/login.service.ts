@@ -13,7 +13,11 @@ export class LoginService {
   login:Login = new Login ();
   private currentUser: any;
 
+<<<<<<< HEAD
   private baseurl1='https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/user/login'
+=======
+  private baseurl1='http://localhost:8080/user/login'
+>>>>>>> f6c32e5fe4e87dad0c7f76042a97fc081493ed6d
 
   constructor(private httpclient:HttpClient) { }
   
@@ -22,4 +26,8 @@ export class LoginService {
   }
 
   
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6c32e5fe4e87dad0c7f76042a97fc081493ed6d

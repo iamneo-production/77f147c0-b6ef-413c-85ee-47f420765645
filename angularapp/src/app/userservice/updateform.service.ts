@@ -8,8 +8,13 @@ import { Applyform } from './applyform';
 })
 export class UpdateformService {
 
+<<<<<<< HEAD
   private baseurl='https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/customer/getProfileByEmail'
   private baseurl2='https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/customer/editProfile'
+=======
+  private baseurl='https://8080-faedbefabcfcbbeadacbdcaababfebeedcefbdfdacea.project.examly.io/customer/getProfileByEmail'
+  private baseurl2='https://8080-faedbefabcfcbbeadacbdcaababfebeedcefbdfdacea.project.examly.io/customer/editProfile'
+>>>>>>> f6c32e5fe4e87dad0c7f76042a97fc081493ed6d
   
   constructor(private httpclient:HttpClient) { }
 
@@ -25,4 +30,8 @@ export class UpdateformService {
     return this.httpclient.get<Applyform>(`${this.baseurl}/${id}`);
   }
   
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6c32e5fe4e87dad0c7f76042a97fc081493ed6d
