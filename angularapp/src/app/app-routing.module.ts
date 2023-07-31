@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CustomercorrectionformComponent } from './customercorrectionform/customercorrectionform.component';
-import { HomeComponent } from './home/home.component';
-import { CustomercorrectiondocumentComponent } from './customercorrectiondocument/customercorrectiondocument.component';
-
+import { TrackpageComponent } from './trackpage/trackpage.component';
+import { TrackstatusComponent } from './trackstatus/trackstatus.component';
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'home', component: HomeComponent},
-  {path: 'customercorrectionform', component: CustomercorrectionformComponent},
-  {path: 'Customercorrectiondocument', component: CustomercorrectiondocumentComponent}
-];
+{path: '', component: TrackpageComponent},
+ {path: 'track', component: TrackstatusComponent},
+ {path: 'status/:id', component: TrackpageComponent},
+ ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
