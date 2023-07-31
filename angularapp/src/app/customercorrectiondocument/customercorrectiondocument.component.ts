@@ -1,7 +1,7 @@
-import { HttpResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Applyform } from '../userservice/applyform';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Updateform } from '../userservice/updateform';
+import { HttpResponse } from '@angular/common/http';
 import { UpdatedocserviceService } from '../userservice/updatedocservice.service';
 
 @Component({
@@ -9,8 +9,8 @@ import { UpdatedocserviceService } from '../userservice/updatedocservice.service
   templateUrl: './customercorrectiondocument.component.html',
   styleUrls: ['./customercorrectiondocument.component.css']
 })
-export class CustomercorrectiondocumentComponent {
-  Applieddocuments:Updateform=new Updateform();
+export class CustomercorrectiondocumentComponent implements OnInit {
+  Applieddocuments:Applyform=new Applyform();
   selectedFile: File | null = null;
   id: string = '';
   message = '';

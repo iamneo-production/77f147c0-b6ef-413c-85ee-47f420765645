@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+
 import { Applyform } from '../userservice/applyform';
 @Component({
   selector: 'app-trackstatus',
@@ -11,10 +11,9 @@ export class TrackstatusComponent {
   id:number
   Applieddocuments: Applyform =new Applyform ();
   
-  constructor(private router: Router ){}
-  ngOnInit(): void {
-    
-  }
+  constructor(private router: Router){}
+
+  ngOnInit(): void{}
 
   track(id:number){ 
     this.router.navigateByUrl(`/status/${this.id}`);

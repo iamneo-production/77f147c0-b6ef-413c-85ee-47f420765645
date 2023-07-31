@@ -7,7 +7,7 @@ import { Applieddoc } from '../adminservice/applieddoc';
   templateUrl: './verification.component.html',
   styleUrls: ['./verification.component.css']
 })
-export class VerificationComponent implements OnInit{
+export class VerificationComponent implements OnInit {
   id:number;
   Applieddocuments:Applieddoc=new Applieddoc();
   
@@ -67,5 +67,6 @@ export class VerificationComponent implements OnInit{
         this.router.navigateByUrl('/adminhome');
       });
     }
+
 }
 
