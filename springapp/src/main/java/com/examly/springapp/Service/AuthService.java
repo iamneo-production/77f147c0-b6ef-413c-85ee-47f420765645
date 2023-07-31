@@ -1,9 +1,9 @@
-package com.examly.springapp.service;
+package com.examly.springapp.Service;
 import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.examly.springapp.model.UserModel;
-import com.examly.springapp.repository.AuthRepository;
+import com.examly.springapp.Model.UserModel;
+import com.examly.springapp.Repository.AuthRepository;
 import java.util.List;
 import java.util.Optional;
 

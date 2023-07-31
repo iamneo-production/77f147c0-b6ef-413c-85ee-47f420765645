@@ -5,9 +5,9 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ApplydocumentService {
-  
-  private baseUrl = 'https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/customer/addDocuments';
+export class UpdatedocserviceService {
+
+  private baseUrl = 'https://8080-adbfbfdfacbdcaababfebeecbbaefdfd.project.examly.io/customer/addDocuments';
   constructor(private http: HttpClient) { }
   uploadDocument(productImage: File, id: string): Observable<HttpEvent<any>> {
     const formData: FormData = new FormData();

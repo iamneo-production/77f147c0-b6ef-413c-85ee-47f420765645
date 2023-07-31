@@ -8,8 +8,8 @@ import { UserSignup } from './user-signup';
 })
 export class UserSignupService {
   
-  private baseurl='http://localhost:8080/user/signup'
-  private baseurl1='http://localhost:8080/getAllUser'
+  private baseurl='https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/user/signup'
+  private baseurl1='https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/getAllUser'
 
   constructor(private httpclient:HttpClient) { }
   getUsers(): Observable<UserSignup[]> {

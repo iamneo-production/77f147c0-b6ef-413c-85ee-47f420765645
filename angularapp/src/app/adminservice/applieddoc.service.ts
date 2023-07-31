@@ -8,7 +8,7 @@ import { Applieddoc } from './applieddoc';
   providedIn: 'root'
 })
 export class ApplieddocService {
-  private url ='https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/appliedDocuments'
+  private url ='https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io//appliedDocuments'
 
 
   constructor(private httpclient:HttpClient) { }
