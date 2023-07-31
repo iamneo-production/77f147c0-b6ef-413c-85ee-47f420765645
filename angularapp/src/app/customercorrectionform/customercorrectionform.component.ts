@@ -50,7 +50,7 @@ export class CustomercorrectionformComponent implements OnInit{
       .subscribe((data:any) => {
         
         console.log('User details updated successfully:',data);
-        this.corrcard = new Updateform();
+        this.corrcard = new Applyform();
       }, error => console.log('Error updating user details:',error));
     
 }
