@@ -38,8 +38,4 @@ export class TrackpageComponent implements OnInit {
   } 
   }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ebb333e999d828e21d25c95335a54083b64b415a
