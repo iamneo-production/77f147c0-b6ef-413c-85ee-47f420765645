@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class CustomercorrectionformComponent implements OnInit{ 
   
-  corrcard: Updateform = new Updateform();
+  corrcard: Applyform = new Applyform();
   id:number
   houseno : string=""
 	streetname : string=""
