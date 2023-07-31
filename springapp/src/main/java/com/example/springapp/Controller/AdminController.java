@@ -21,7 +21,7 @@ import com.examly.springapp.Service.UserService;
 
 
 @RestController
-@CrossOrigin(origins="https://8081-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/",allowedHeaders="*")
+@CrossOrigin
 
 public class AdminController {
 	
