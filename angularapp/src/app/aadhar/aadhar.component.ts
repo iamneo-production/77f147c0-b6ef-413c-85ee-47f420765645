@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CorrectiondocsService } from '../adminservice/correctiondocs.service';
-import { Correctiondocs } from '../adminservice/correctiondocs';
+import { Applieddoc } from '../adminservice/applieddoc';
 @Component({
   selector: 'app-aadhar',
   templateUrl: './aadhar.component.html',
@@ -9,7 +9,7 @@ import { Correctiondocs } from '../adminservice/correctiondocs';
 })
 export class AadharComponent implements OnInit{
   id:number;
-  Applieddocuments:Correctiondocs=new Correctiondocs();
+  Applieddocuments:Applieddoc=new Applieddoc();
  
   constructor(private route: ActivatedRoute,private router: Router, private adminService: CorrectiondocsService ) { }
   ngOnInit() {

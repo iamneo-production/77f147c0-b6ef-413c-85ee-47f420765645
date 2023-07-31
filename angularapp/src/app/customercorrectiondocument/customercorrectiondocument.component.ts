@@ -1,8 +1,8 @@
 import { HttpResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Updateform } from '../userservice/updateform';
 import { UpdatedocserviceService } from '../userservice/updatedocservice.service';
+import { Applyform } from '../userservice/applyform';
 
 @Component({
   selector: 'app-customercorrectiondocument',
@@ -10,7 +10,7 @@ import { UpdatedocserviceService } from '../userservice/updatedocservice.service
   styleUrls: ['./customercorrectiondocument.component.css']
 })
 export class CustomercorrectiondocumentComponent {
-  Applieddocuments:Updateform=new Updateform();
+  Applieddocuments:Applyform=new Applyform();
   selectedFile: File | null = null;
   id: string = '';
   message = '';

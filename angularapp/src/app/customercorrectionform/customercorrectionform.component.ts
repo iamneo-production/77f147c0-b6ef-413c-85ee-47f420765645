@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
   templateUrl: './customercorrectionform.component.html',
   styleUrls: ['./customercorrectionform.component.css']
 })
-export class CustomercorrectionformComponent implements OnInit{ 
-  
+export class CustomercorrectionformComponent implements OnInit {
+
   corrcard: Applyform = new Applyform();
   id:number
   houseno : string=""
@@ -50,7 +50,7 @@ export class CustomercorrectionformComponent implements OnInit{
       .subscribe((data:any) => {
         
         console.log('User details updated successfully:',data);
-        this.corrcard = new Updateform();
+        this.corrcard = new Applyform();
       }, error => console.log('Error updating user details:',error));
     
 }
@@ -63,5 +63,5 @@ onNext(){
   this.router.navigate(['/corrcard1']);
 }
 
-}
 
+}
