@@ -20,6 +20,8 @@ import { TrackpageComponent } from './trackpage/trackpage.component';
 import { TrackstatusComponent } from './trackstatus/trackstatus.component';
 import { GenerateAadharComponent } from './generate-aadhar/generate-aadhar.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AdminnavComponent } from './adminnav/adminnav.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { FormsModule } from '@angular/forms';
     AadharComponent,
     TrackstatusComponent,
     TrackpageComponent,
-    GenerateAadharComponent
+    GenerateAadharComponent,
+    NavbarComponent,
+    AdminnavComponent
   ],
   imports: [
     BrowserModule,
