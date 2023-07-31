@@ -21,7 +21,7 @@ import com.examly.springapp.Service.UserService;
 
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200",allowedHeaders="*")
+@CrossOrigin
 
 public class AdminController {
 	
