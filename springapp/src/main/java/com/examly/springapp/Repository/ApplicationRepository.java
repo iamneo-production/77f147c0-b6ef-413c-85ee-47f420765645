@@ -10,7 +10,6 @@ import com.examly.springapp.Model.ApplicationModel;
 @Repository
 
 public interface ApplicationRepository extends JpaRepository<ApplicationModel, Long>{
-
 	ApplicationModel findByEmail(String email);
 	ApplicationModel findById(long id);
 	
