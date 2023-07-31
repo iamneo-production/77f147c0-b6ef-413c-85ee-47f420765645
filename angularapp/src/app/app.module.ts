@@ -1,24 +1,21 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SignupComponent } from './signup/signup.component';
-import { GenerateAadharComponent } from './generate-aadhar/generate-aadhar.component';
+import { ApplieddocumentsComponent } from './applieddocuments/applieddocuments.component';
+import { VerificationComponent } from './verification/verification.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignupComponent,
-    GenerateAadharComponent,
-
+    ApplieddocumentsComponent,
+    VerificationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    FormsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
