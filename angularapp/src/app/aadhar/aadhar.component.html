@@ -1,0 +1,12 @@
+
+<body>
+    <div class="wrapper">
+      <div *ngIf="Applieddocuments ">        
+       
+        Applicant Id: {{ Applieddocuments.id }}<br>
+        <button type="button"  (click)="generateAadhar( Applieddocuments.id)" >Generate Aadhar</button>
+      </div>     
+      </div>
+
+</body>
+
