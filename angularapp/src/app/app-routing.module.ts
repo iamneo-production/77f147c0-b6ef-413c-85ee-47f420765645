@@ -26,7 +26,7 @@ const routes: Routes = [
  {path: 'applydoc/:email', component:  CustomerapplydocumentComponent},
  {path: 'applyres/:email', component: CustomerapplyresponseComponent},
  {path: 'customercorrectionform', component: CustomercorrectionformComponent},
- {path: 'Customercorrectiondocument', component: CustomercorrectiondocumentComponent}
+ {path: 'Customercorrectiondocument', component: CustomercorrectiondocumentComponent},
  {path: 'appdoc', component:  ApplieddocumentsComponent},
  {path: 'adminhome', component: AdminhomeComponent},
  {path: 'corrdoc', component: CorrectiondocumentsComponent},
