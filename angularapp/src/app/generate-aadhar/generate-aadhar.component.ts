@@ -1,57 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Newcard } from '../userservices/newcard';
-import { NewcardService } from '../userservices/newcard.service';
-import { NewcarddocService } from '../userservices/newcarddoc.service';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { UserSignup } from './user-signup';
 
-@Component({
-  selector: 'app-generate-aadhar',
-  templateUrl: './generate-aadhar.component.html',
-  styleUrls: ['./generate-aadhar.component.css']
+@Injectable({
+  providedIn: 'root'
 })
-export class GenerateAadharComponent implements OnInit{
-  id:number;
-  Applieddocuments:Newcard=new Newcard();
+export class UserSignupService {
   
-  imageSrc: any;
-  docid:string;
-  setApprovalStatus : string;
-  
-  constructor(private route: ActivatedRoute,private router: Router,
-    private verifyService: NewcardService, private docService: NewcarddocService) { }
-    ngOnInit() {
-     
-      this.id = this.route.snapshot.params['id']|| null;
-      console.log(this.id);
-      this.verifyService.getProfile(this.id)
-        .subscribe(data => {
-          console.log(data)
-          this.Applieddocuments= data;
-        }, error => console.log(error));
+  private baseurl='http://localhost:8080/user/signup'
+  private baseurl1='http://localhost:8080/getAllUser'
 
-        this.fetchImage();
-    }
+  constructor(private httpclient:HttpClient) { }
+  getUsers(): Observable<UserSignup[]> {
+    return this.httpclient.get<UserSignup[]>(this.baseurl1);
+  }
 
-    fetchImage() {
-      this.verifyService.downloadImageByProfileId(this.id).subscribe(
-        (response: any) => {
-          const imageBlob = new Blob([response.body], { type: 'image/png' });
-          this.imageSrc = this.createImageFromBlob(imageBlob);
-        },
-        (error) => {
-          console.error('Error fetching the image:', error);
-        }
-      );}
-
-      createImageFromBlob(image: Blob): any {
-        const reader = new FileReader();
-        reader.addEventListener('load', () => {
-          this.imageSrc = reader.result; // url assigned to image
-        }, false);
-        if (image) {
-          reader.readAsDataURL(image);
-        }
-      }
-      
+  registerUser(user:UserSignup): Observable<Object>{
+    return this.httpclient.post(`${this.baseurl}`, user);
+  }
 }
-
