@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/Repository/AuthRepository.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/Response/LoginResponse.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/Controller/AuthController.java
@@ -6,6 +7,9 @@
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/Model/LoginModel.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/SpringappApplication.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/Model/UserModel.java
+=======
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/SpringappApplication.java
+>>>>>>> 467f446782a0473aae21ba8a70417ac2e2306790
 =======
 <<<<<<< HEAD
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/AuthService.java
