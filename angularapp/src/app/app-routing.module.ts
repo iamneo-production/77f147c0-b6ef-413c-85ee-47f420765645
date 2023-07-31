@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CustomerapplyformComponent } from './customerapplyform/customerapplyform.component';
-import { CustomerapplydocumentComponent } from './customerapplydocument/customerapplydocument.component';
-import { CustomerapplyresponseComponent } from './customerapplyresponse/customerapplyresponse.component';
+import { AdminhomeComponent } from './adminhome/adminhome.component';
+import { CorrectiondocumentsComponent } from './correctiondocuments/correctiondocuments.component';
+import { AadharComponent } from './aadhar/aadhar.component';
 
 const routes: Routes = [
-  {path: '', component: CustomerapplyformComponent},
-  {path: 'applyform', component: CustomerapplyformComponent},
-  {path: 'applydoc', component:  CustomerapplydocumentComponent},
-  {path: 'applyres', component: CustomerapplyresponseComponent},
-  
+  {path: '', component: AdminhomeComponent},
+  {path: 'adminhome', component: AdminhomeComponent},
+  {path: 'corrdoc', component: CorrectiondocumentsComponent},
+  {path: 'aadhar/:id', component: AadharComponent},
 ];
 
 @NgModule({

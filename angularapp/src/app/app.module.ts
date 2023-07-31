@@ -4,19 +4,21 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { CustomerapplyformComponent } from './customerapplyform/customerapplyform.component';
-import { CustomerapplydocumentComponent } from './customerapplydocument/customerapplydocument.component';
-import { CustomerapplyresponseComponent } from './customerapplyresponse/customerapplyresponse.component';
+import { AadharComponent } from './aadhar/aadhar.component';
+import { AdminhomeComponent } from './adminhome/adminhome.component';
+import { AdminnavComponent } from './adminnav/adminnav.component';
+import { CorrectiondocumentsComponent } from './correctiondocuments/correctiondocuments.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomerapplyformComponent,
-    CustomerapplydocumentComponent,
-    CustomerapplyresponseComponent,
-
+    AdminhomeComponent,
+    AdminnavComponent,
+    CorrectiondocumentsComponent,
+    AadharComponent
+    
   ],
   imports: [
     BrowserModule,
