@@ -8,8 +8,8 @@ public class LoginModel {
     LoginModel(){
 
     }
-    LoginModel(String emailId,String password, String userRsole){
-    	this.userRole=userRsole;
+    LoginModel(String emailId,String password, String userRole){
+    	  this.userRole=userRole;
         this.emailId=emailId;
         this.password=password;
     }
