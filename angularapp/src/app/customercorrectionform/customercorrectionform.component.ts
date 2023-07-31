@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Updateform } from '../userservice/updateform';
 import { UpdateformService } from '../userservice/updateform.service';
 import { Router } from '@angular/router';
+import { Applyform } from '../userservice/applyform';
 
 @Component({
   selector: 'app-customercorrectionform',
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class CustomercorrectionformComponent implements OnInit{ 
   
-  corrcard: Updateform = new Updateform();
+  corrcard: Applyform = new Applyform();
   id:number
   houseno : string=""
 	streetname : string=""
@@ -50,7 +50,7 @@ export class CustomercorrectionformComponent implements OnInit{
       .subscribe((data:any) => {
         
         console.log('User details updated successfully:',data);
-        this.corrcard = new Updateform();
+        this.corrcard = new Applyform();
       }, error => console.log('Error updating user details:',error));
     
 }
