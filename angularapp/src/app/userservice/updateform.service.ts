@@ -21,9 +21,5 @@ export class UpdateformService {
   getProfileByEmail(email: string) {
     return this.httpclient.get<Updateform>(`${this.baseurl}/${email}`);
   }
-  getProfile(id: number) {
-    return this.httpclient.get<Applyform>(`${this.baseurl}/${id}`);
-  }
-
   
 }

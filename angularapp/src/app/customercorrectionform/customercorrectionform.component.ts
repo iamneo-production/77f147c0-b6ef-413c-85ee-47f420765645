@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Applyform } from '../userservice/applyform';
+import { Updateform } from '../userservice/updateform';
 import { UpdateformService } from '../userservice/updateform.service';
 import { Router } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class CustomercorrectionformComponent implements OnInit{ 
   
-  corrcard: Applyform = new Applyform();
+  corrcard: Updateform = new Updateform();
   id:number
   houseno : string=""
 	streetname : string=""
