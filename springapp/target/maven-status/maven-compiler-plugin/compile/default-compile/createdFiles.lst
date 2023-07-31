@@ -1,25 +1,21 @@
-<<<<<<< HEAD
 com/examly/springapp/Model/DocumentModel.class
-com/examly/springapp/Repository/ApplicationRepository.class
+com/examly/springapp/Model/Profile.class
 com/examly/springapp/SpringappApplication.class
 com/examly/springapp/Repository/DocRepository.class
+com/examly/springapp/Repository/AuthRepository.class
+com/examly/springapp/Service/AdminService.class
 UserController.class
+com/examly/springapp/Service/AuthService.class
+com/examly/springapp/Controller/ProfileController.class
+com/examly/springapp/Service/ProfileService.class
+com/examly/springapp/Repository/ApplicationRepository.class
+com/examly/springapp/Controller/AdminController.class
+com/examly/springapp/Response/LoginResponse.class
+com/examly/springapp/Model/UserModel.class
 com/examly/springapp/Response/DocResponseMessage.class
+com/examly/springapp/Controller/AuthController.class
 com/examly/springapp/Service/UserService.class
 com/examly/springapp/Response/ImageUtil.class
 com/examly/springapp/Model/ApplicationModel.class
-=======
-<<<<<<< HEAD
-com/examly/springapp/repository/AuthRepository.class
-com/examly/springapp/model/UserModel.class
-com/examly/springapp/SpringappApplication.class
-com/examly/springapp/service/AuthService.class
-com/examly/springapp/controller/AuthController.class
-=======
-com/examly/springapp/model/Profile.class
-com/examly/springapp/repository/ProfileRepository.class
-com/examly/springapp/SpringappApplication.class
-com/examly/springapp/controller/ProfileController.class
-com/examly/springapp/service/ProfileService.class
->>>>>>> bf8ff0109478d568d9dffcd5abb908aea0bc8986
->>>>>>> bf7cca96c0ad26812a0acae29190b6ed95eb9ee0
+com/examly/springapp/Model/LoginModel.class
+com/examly/springapp/Repository/ProfileRepository.class
