@@ -20,6 +20,8 @@ import { AadharComponent } from './aadhar/aadhar.component';
 import { TrackpageComponent } from './trackpage/trackpage.component';
 import { TrackstatusComponent } from './trackstatus/trackstatus.component';
 import { GenerateAadharComponent } from './generate-aadhar/generate-aadhar.component';
+import { AdminnavComponent } from './adminnav/adminnav.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { GenerateAadharComponent } from './generate-aadhar/generate-aadhar.compo
     AadharComponent,
     TrackstatusComponent,
     TrackpageComponent,
-    GenerateAadharComponent
+    GenerateAadharComponent,
+    AdminnavComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
