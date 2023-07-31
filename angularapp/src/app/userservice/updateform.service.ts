@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Updateform } from './updateform';
+import { Applyform } from './applyform';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +19,10 @@ export class UpdateformService {
     return this.httpclient.put(url, formData);
   }
   getProfileByEmail(email: string) {
-    return this.httpclient.get<Updateform>(`${this.baseurl}/${email}`);
+    return this.httpclient.get<Applyform>(`${this.baseurl}/${email}`);
+  }
+  getProfile(id: number) {
+    return this.httpclient.get<Applyform>(`${this.baseurl}/${id}`);
   }
   
 }
