@@ -8,8 +8,8 @@ import { Applyform } from './applyform';
 })
 export class UpdateformService {
 
-  private baseurl='https://8080-faedbefabcfcbbeadacbdcaababfebeedcefbdfdacea.project.examly.io/customer/getProfileByEmail'
-  private baseurl2='https://8080-faedbefabcfcbbeadacbdcaababfebeedcefbdfdacea.project.examly.io/customer/editProfile'
+  private baseurl='https://8080-caaeabbaebabdafacbdcaababfebeecbbaefdfd.project.examly.io/customer/getProfileByEmail'
+  private baseurl2='https://8080-caaeabbaebabdafacbdcaababfebeecbbaefdfd.project.examly.io/customer/editProfile'
   
   constructor(private httpclient:HttpClient) { }
 

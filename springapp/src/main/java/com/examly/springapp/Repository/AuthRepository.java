@@ -1,4 +1,4 @@
-package com.examly.springapp.repository;
+package com.examly.springapp.Repository;
 
 import java.util.*;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package com.examly.springapp.controller;
+package com.examly.springapp.Controller;
 import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

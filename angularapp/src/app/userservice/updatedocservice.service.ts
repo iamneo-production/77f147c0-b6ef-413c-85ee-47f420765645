@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class UpdatedocserviceService {
 
-  private baseUrl = 'https://8080-adbfbfdfacbdcaababfebeecbbaefdfd.project.examly.io/customer/addDocuments';
+  private baseUrl = 'https://8080-caaeabbaebabdafacbdcaababfebeecbbaefdfd.project.examly.io/customer/addDocuments';
   constructor(private http: HttpClient) { }
   uploadDocument(productImage: File, id: string): Observable<HttpEvent<any>> {
     const formData: FormData = new FormData();

@@ -7,7 +7,7 @@ import { Applieddoc } from './applieddoc';
   providedIn: 'root'
 })
 export class CorrectiondocsService{
-  private url1 ='https://8080-edbbacbdcaababfebeecbbaefdfd.project.examly.io/admin/correctionDocuments'
+  private url1 ='https://8080-caaeabbaebabdafacbdcaababfebeecbbaefdfd.project.examly.io/admin/correctionDocuments'
   constructor(private httpclient:HttpClient) { }
   getAllUpdatedProfile(): Observable<Applieddoc[]> {
     return this.httpclient.get<Applieddoc[]>(this.url1);

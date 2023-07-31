@@ -18,18 +18,18 @@ export class ApplieddocService {
   }
   getProfile(id:number) {
     console.log(id);
-    return this.httpclient.get<Applieddoc>(`https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/admin/getProfile/${id}`); // Replace '1' with the actual user ID
+    return this.httpclient.get<Applieddoc>(`https://8080-caaeabbaebabdafacbdcaababfebeecbbaefdfd.project.examly.io/admin/getProfile/${id}`); // Replace '1' with the actual user ID
   }
   approveProfile(id: number): Observable<Applieddoc> {
-    const url = `https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/admin/getProfile/${id}/approve`;
+    const url = `hhttps://8080-caaeabbaebabdafacbdcaababfebeecbbaefdfd.project.examly.io/admin/getProfile/${id}/approve`;
     return this.httpclient.put<Applieddoc>(url, null);
   }
   rejectProfile(id: number): Observable<Applieddoc> {
-    const url = `https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/admin/getProfile/${id}/reject`;
+    const url = `https://8080-caaeabbaebabdafacbdcaababfebeecbbaefdfd.project.examly.io/admin/getProfile/${id}/reject`;
     return this.httpclient.put<Applieddoc>(url, null);
   }
   downloadImageByProfileId(id: number): Observable<HttpResponse<Blob>> {
-    const url = `https://8080-faafcafbddfacbdcaababfebeecbbaefdfd.project.examly.io/admin/getDocuments/profile/${id}`;
+    const url = `https://8080-caaeabbaebabdafacbdcaababfebeecbbaefdfd.project.examly.io/admin/getDocuments/profile/${id}`;
     return this.httpclient.get(url, { observe: 'response', responseType: 'blob' });
   }
 }
